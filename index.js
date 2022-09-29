@@ -1,3 +1,14 @@
+const WebSocket = require('ws');
+const ws = new WebSocket("wss://stream.binance.com:9443/ws/btcbusd@bookTicker");
+
+//puxa as informacoes de simbolo, oferta e lance da binance via websockets
+ws.onmessage = (event) => {
+    process.stdout.write('\033c');
+    const obj = JSON.parse(event.data);
+    console.log(`Symbolo: ${obj.s}`);
+    console.log(`Melhor oferta:${obj.a} `);
+    console.log(`Melhor lance: ${obj.b}`);
+}
 
 
 // import { Server } from "socket.io";
