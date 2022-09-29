@@ -1,0 +1,24 @@
+{
+  "name": "ws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CristianoSword/web-sockets-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CristianoSword/web-sockets-js/issues"
+  },
+  "homepage": "https://github.com/CristianoSword/web-sockets-js#readme",
+  "dependencies": {
+    "ws": "^8.9.0"
+  }
+}
